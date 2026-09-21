@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+:root {
+  --color-cream: #fdf6ec;
+  --color-cream-dark: #f5e9d6;
+  --color-tomato: #e0503a;
+  --color-tomato-dark: #c23f2c;
+  --color-olive: #5f6f47;
+  --color-olive-dark: #4a5837;
+  --color-ink: #3a2e28;
+  --color-ink-light: #6b5c52;
+}
+
+@theme inline {
+  --color-cream: var(--color-cream);
+  --color-cream-dark: var(--color-cream-dark);
+  --color-tomato: var(--color-tomato);
+  --color-tomato-dark: var(--color-tomato-dark);
+  --color-olive: var(--color-olive);
+  --color-olive-dark: var(--color-olive-dark);
+  --color-ink: var(--color-ink);
+  --color-ink-light: var(--color-ink-light);
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-nunito);
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display), ui-serif, Georgia, serif;
+}
+
+.container-page {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .container-page {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
