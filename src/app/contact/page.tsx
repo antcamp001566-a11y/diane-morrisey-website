@@ -3,11 +3,13 @@ import SectionHeading from "@/components/SectionHeading";
 import ContactForm from "@/components/ContactForm";
 import EmailSignupForm from "@/components/EmailSignupForm";
 import { site } from "@/data/site";
+import { buildMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: `Contact | ${site.name}`,
+export const metadata: Metadata = buildMetadata({
+  title: "Contact",
   description: "Get in touch with Diane Morrisey for brand partnerships, media, or fan questions.",
-};
+  path: "/contact",
+});
 
 export default function ContactPage() {
   return (

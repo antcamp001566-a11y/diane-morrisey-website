@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PlaceholderImage from "./PlaceholderImage";
+import SiteImage from "./SiteImage";
 import type { Recipe } from "@/data/recipes";
 
 export default function RecipeCard({ recipe }: { recipe: Recipe }) {
@@ -9,11 +9,12 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
       className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-ink/5 transition-transform hover:-translate-y-1 hover:shadow-md"
     >
       <div className="relative aspect-[4/3] w-full overflow-hidden">
-        <PlaceholderImage
+        <SiteImage
           src={recipe.image}
           alt={recipe.title}
-          label={recipe.title}
+          fallbackLabel={recipe.title}
           fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
           className="object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>

@@ -1,25 +1,43 @@
 import type { Metadata } from "next";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import SiteImage from "@/components/SiteImage";
 import SectionHeading from "@/components/SectionHeading";
 import Button from "@/components/Button";
+import JsonLd from "@/components/JsonLd";
 import { book } from "@/data/book";
 import { site } from "@/data/site";
+import { buildMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: `The Book | ${site.name}`,
+export const metadata: Metadata = buildMetadata({
+  title: "The Book",
   description: book.description,
-};
+  path: "/the-book",
+});
 
 export default function TheBookPage() {
   return (
     <div className="container-page py-14">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Book",
+          name: book.title,
+          alternateName: book.subtitle,
+          description: book.description,
+          author: { "@type": "Person", name: site.name },
+          publisher: book.publisher,
+          datePublished: book.releaseDateISO,
+          numberOfPages: book.pages.replace(/\D/g, ""),
+          url: `${site.url}/the-book`,
+        }}
+      />
       <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
         <div className="relative mx-auto aspect-[3/4] w-full max-w-sm overflow-hidden rounded-3xl shadow-lg">
-          <PlaceholderImage
+          <SiteImage
             alt={`${book.title} book cover`}
-            label="Book cover art (front + back)"
+            fallbackLabel="Book cover art (front + back)"
             variant="tomato"
             fill
+            priority
           />
         </div>
         <div>
@@ -61,29 +79,44 @@ export default function TheBookPage() {
         </div>
       </div>
 
-      {/* Testimonials */}
-      <div className="mt-20">
-        <SectionHeading
-          align="center"
-          eyebrow="What Readers Are Saying"
-          title="Loved by home cooks and critics alike"
-        />
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          {book.testimonials.map((testimonial) => (
-            <figure
-              key={testimonial.attribution}
-              className="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5"
-            >
-              <blockquote className="font-body text-ink-light">
-                &ldquo;{testimonial.quote}&rdquo;
-              </blockquote>
-              <figcaption className="mt-4 font-body text-sm font-bold text-ink">
-                &mdash; {testimonial.attribution}
-              </figcaption>
-            </figure>
-          ))}
-        </div>
+      {/* Author's philosophy — a real, sourced quote from Diane */}
+      <div className="mt-20 rounded-3xl bg-cream-dark px-8 py-14 text-center">
+        <p className="font-body text-sm font-bold uppercase tracking-widest text-tomato">
+          In Diane&apos;s Words
+        </p>
+        <blockquote className="mx-auto mt-4 max-w-2xl font-display text-2xl font-medium italic text-ink sm:text-3xl">
+          &ldquo;{book.authorQuote.quote}&rdquo;
+        </blockquote>
+        <p className="mt-4 font-body text-sm font-bold text-ink-light">
+          &mdash; {book.authorQuote.attribution}
+        </p>
       </div>
+
+      {/* Real reader/press reviews go here once available — see book.testimonials in src/data/book.ts */}
+      {book.testimonials.length > 0 && (
+        <div className="mt-20">
+          <SectionHeading
+            align="center"
+            eyebrow="What Readers Are Saying"
+            title="Loved by home cooks and critics alike"
+          />
+          <div className="mt-10 grid gap-6 md:grid-cols-3">
+            {book.testimonials.map((testimonial) => (
+              <figure
+                key={testimonial.attribution}
+                className="flex flex-col justify-between rounded-2xl bg-white p-6 shadow-sm ring-1 ring-ink/5"
+              >
+                <blockquote className="font-body text-ink-light">
+                  &ldquo;{testimonial.quote}&rdquo;
+                </blockquote>
+                <figcaption className="mt-4 font-body text-sm font-bold text-ink">
+                  &mdash; {testimonial.attribution}
+                </figcaption>
+              </figure>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* CTA */}
       <div className="mt-20 rounded-3xl bg-olive px-8 py-12 text-center text-cream">

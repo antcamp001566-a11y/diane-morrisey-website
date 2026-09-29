@@ -1,9 +1,13 @@
 // ---------------------------------------------------------------------------
-// RECIPES — placeholder content. Add, remove, or edit entries here; the
-// Recipes pages read straight from this file, so no other code needs to
-// change. `image` accepts any string — swap in a real photo path (e.g.
-// "/images/recipes/shrimp-parm.jpg") once you have one, and the
-// placeholder graphic is used automatically until then.
+// RECIPES — every recipe below is invented sample content to demonstrate
+// the format (card, filtering, detail layout) — none of these are Diane's
+// actual recipes. `verified: false` reflects that on every entry; flip it
+// to `true` only once a recipe's text has actually come from Diane. Add,
+// remove, or edit entries here; the Recipes pages read straight from this
+// file, so no other code needs to change. `image` accepts any string —
+// swap in a real photo path (e.g. "/images/recipes/shrimp-parm.jpg") once
+// you have one, and the placeholder graphic is used automatically until
+// then. Recommended photo: 4:3, at least 1200x900px.
 // ---------------------------------------------------------------------------
 
 export type RecipeCategory =
@@ -23,6 +27,12 @@ export type Recipe = {
   image?: string;
   ingredients: string[];
   steps: string[];
+  // False for every sample recipe below — set true once real recipe text
+  // from Diane replaces it.
+  verified: boolean;
+  // Optional link back to where a real recipe was originally published
+  // (her site, a press feature, etc.) once one exists.
+  sourceUrl?: string;
 };
 
 export const recipeCategories: RecipeCategory[] = [
@@ -42,6 +52,7 @@ export const recipes: Recipe[] = [
       "Crispy, saucy, cheesy shrimp parm that's on the table in 30 minutes flat — a family favorite that even the picky eaters ask for on repeat.",
     totalTime: "30 min",
     servings: "Serves 4-6",
+    verified: false,
     ingredients: [
       "1 1/2 lbs large shrimp, peeled and deveined",
       "1 cup Italian breadcrumbs",
@@ -69,6 +80,7 @@ export const recipes: Recipe[] = [
       "Make these the night before and wake up to the smell of cinnamon and brown sugar — the ultimate cozy holiday morning tradition.",
     totalTime: "45 min active, overnight rise",
     servings: "Makes 12 rolls",
+    verified: false,
     ingredients: [
       "1 cup warm milk",
       "2 1/4 tsp active dry yeast",
@@ -97,6 +109,7 @@ export const recipes: Recipe[] = [
       "The sauce that simmers all day and brings everyone to the kitchen — this is the recipe my kids request for every birthday.",
     totalTime: "3 hrs",
     servings: "Serves 8",
+    verified: false,
     ingredients: [
       "2 lbs ground beef and pork mix",
       "1 cup breadcrumbs soaked in milk",
@@ -124,6 +137,7 @@ export const recipes: Recipe[] = [
       "Bright, buttery, and ready before the table's even set. This is my go-to on the nights when everyone's starving and I have twenty minutes.",
     totalTime: "15 min",
     servings: "Serves 4",
+    verified: false,
     ingredients: [
       "1 lb spaghetti",
       "1/2 cup butter",
@@ -147,6 +161,7 @@ export const recipes: Recipe[] = [
       "Nutty brown butter and flaky sea salt take the classic chocolate chip cookie to a whole new level. These never last more than a day in my house.",
     totalTime: "35 min",
     servings: "Makes 24 cookies",
+    verified: false,
     ingredients: [
       "1 cup butter, browned and slightly cooled",
       "1 cup brown sugar",
@@ -173,6 +188,7 @@ export const recipes: Recipe[] = [
       "One pan, one sheet tray, zero stress. This is the dinner I make when it's been one of those days and everyone still needs to eat.",
     totalTime: "35 min",
     servings: "Serves 4-6",
+    verified: false,
     ingredients: [
       "2 lbs chicken breast, sliced into strips",
       "3 bell peppers, sliced",

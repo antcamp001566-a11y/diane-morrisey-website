@@ -1,11 +1,11 @@
 import Button from "@/components/Button";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import SiteImage from "@/components/SiteImage";
 import RecipeCard from "@/components/RecipeCard";
 import SectionHeading from "@/components/SectionHeading";
 import PressLogoStrip from "@/components/PressLogoStrip";
 import EmailSignupForm from "@/components/EmailSignupForm";
 import { recipes } from "@/data/recipes";
-import { site } from "@/data/site";
+import { instagramFollowers } from "@/data/social";
 import { book } from "@/data/book";
 
 const featuredRecipes = recipes.slice(0, 3);
@@ -38,16 +38,17 @@ export default function Home() {
               </Button>
             </div>
             <p className="mt-6 font-body text-sm text-ink-light">
-              Followed by {site.instagramFollowers} home cooks on Instagram
+              Followed by {instagramFollowers} home cooks on Instagram
             </p>
           </div>
 
           <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-3xl shadow-lg">
-            <PlaceholderImage
+            <SiteImage
               alt="Diane Morrisey with the You Got This! cookbook"
-              label="Diane + book cover hero photo"
+              fallbackLabel="Diane + book cover hero photo"
               variant="tomato"
               fill
+              priority
             />
           </div>
         </div>
@@ -65,9 +66,9 @@ export default function Home() {
       <section className="container-page py-16">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHeading
-            eyebrow="Fan Favorites"
-            title="Recipes everyone's making right now"
-            description="Straight from my kitchen (and your DMs) &mdash; the recipes readers make again and again."
+            eyebrow="From the Kitchen"
+            title="A few recipes to get you started"
+            description="Real food, no fuss &mdash; a taste of what's cooking."
           />
           <Button href="/recipes" variant="outline">
             See all recipes
@@ -84,9 +85,9 @@ export default function Home() {
       <section className="bg-olive py-16 text-cream">
         <div className="container-page grid items-center gap-10 md:grid-cols-2">
           <div className="relative mx-auto aspect-[3/4] w-full max-w-xs overflow-hidden rounded-2xl shadow-lg">
-            <PlaceholderImage
+            <SiteImage
               alt="You Got This! book cover"
-              label="Book cover art"
+              fallbackLabel="Book cover art"
               variant="cream"
               fill
             />

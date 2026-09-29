@@ -1,13 +1,14 @@
 import Link from "next/link";
 import { site } from "@/data/site";
+import { social } from "@/data/social";
 import EmailSignupForm from "./EmailSignupForm";
 
 const socialLinks = [
-  { label: "Instagram", href: site.social.instagram },
-  { label: "TikTok", href: site.social.tiktok },
-  { label: "Facebook", href: site.social.facebook },
-  { label: "Pinterest", href: site.social.pinterest },
-  { label: "YouTube", href: site.social.youtube },
+  { label: "Instagram", href: social.instagram },
+  { label: "TikTok", href: social.tiktok },
+  { label: "Facebook", href: social.facebook },
+  { label: "Pinterest", href: social.pinterest },
+  { label: "YouTube", href: social.youtube },
 ];
 
 export default function Footer() {

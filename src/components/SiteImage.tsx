@@ -1,44 +1,62 @@
 import Image from "next/image";
 
 // ---------------------------------------------------------------------------
-// PLACEHOLDER IMAGE
+// SITE IMAGE
 // Renders a real image when `src` is provided; otherwise falls back to a
-// warm gradient card labeled with what should go there, so it's obvious
-// what to shoot/upload and where it goes. Once you have real photography,
-// just pass a `src` (e.g. "/images/hero-diane.jpg") and it's used
-// automatically — no other changes needed.
+// warm, on-brand placeholder card labeled with what should go there, so
+// it's obvious what to shoot/upload and where it goes — never disguised as
+// a real photo. Once you have real photography, pass a `src`
+// (e.g. "/images/home/hero-diane.jpg") and it's used automatically, no
+// other changes needed. See CONTENT-GUIDE.md for exact dimensions/naming
+// per placement.
 // ---------------------------------------------------------------------------
 
-type PlaceholderImageProps = {
+type SiteImageProps = {
   src?: string;
   alt: string;
-  label: string;
+  fallbackLabel?: string;
   variant?: "tomato" | "olive" | "cream";
   className?: string;
   fill?: boolean;
   width?: number;
   height?: number;
+  priority?: boolean;
+  sizes?: string;
 };
 
+// Kept to a single warm-to-dark duotone per variant rather than a
+// multi-hue blend — reads as an intentional brand placeholder, not a
+// decorative gradient.
 const gradients: Record<string, string> = {
-  tomato: "from-tomato via-tomato-dark to-ink",
-  olive: "from-olive via-olive-dark to-ink",
-  cream: "from-cream-dark via-tomato to-olive-dark",
+  tomato: "from-tomato to-ink",
+  olive: "from-olive to-ink",
+  cream: "from-cream-dark to-olive-dark",
 };
 
-export default function PlaceholderImage({
+const DEFAULT_SIZES = "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw";
+
+export default function SiteImage({
   src,
   alt,
-  label,
+  fallbackLabel,
   variant = "tomato",
   className = "",
   fill = false,
   width,
   height,
-}: PlaceholderImageProps) {
+  priority = false,
+  sizes,
+}: SiteImageProps) {
   if (src) {
     return fill ? (
-      <Image src={src} alt={alt} className={className} fill />
+      <Image
+        src={src}
+        alt={alt}
+        className={className}
+        fill
+        priority={priority}
+        sizes={sizes ?? DEFAULT_SIZES}
+      />
     ) : (
       <Image
         src={src}
@@ -46,6 +64,7 @@ export default function PlaceholderImage({
         className={className}
         width={width ?? 800}
         height={height ?? 600}
+        priority={priority}
       />
     );
   }
@@ -58,7 +77,6 @@ export default function PlaceholderImage({
       role="img"
       aria-label={alt}
     >
-      <div className="absolute inset-0 opacity-20 [background-image:radial-gradient(circle_at_20%_20%,white,transparent_35%),radial-gradient(circle_at_80%_60%,white,transparent_40%)]" />
       <div className="relative flex flex-col items-center gap-2 px-6 text-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -78,7 +96,9 @@ export default function PlaceholderImage({
         <p className="text-xs font-semibold uppercase tracking-wide text-white/90">
           Photo placeholder
         </p>
-        <p className="font-body text-sm text-white">{label}</p>
+        {fallbackLabel && (
+          <p className="font-body text-sm text-white">{fallbackLabel}</p>
+        )}
       </div>
     </div>
   );

@@ -10,8 +10,7 @@ type ButtonProps = {
 };
 
 const variants: Record<string, string> = {
-  primary:
-    "bg-tomato text-white hover:bg-tomato-dark shadow-sm shadow-tomato/30",
+  primary: "bg-tomato text-white hover:bg-tomato-dark",
   secondary: "bg-olive text-white hover:bg-olive-dark",
   outline: "border-2 border-ink text-ink hover:bg-ink hover:text-cream",
 };

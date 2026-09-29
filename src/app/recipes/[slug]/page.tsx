@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import PlaceholderImage from "@/components/PlaceholderImage";
+import SiteImage from "@/components/SiteImage";
+import RecipeActions from "@/components/RecipeActions";
+import JsonLd from "@/components/JsonLd";
 import { getRecipeBySlug, recipes } from "@/data/recipes";
+import { buildMetadata } from "@/lib/metadata";
 import { site } from "@/data/site";
 
 type RecipePageProps = {
@@ -20,13 +23,18 @@ export async function generateMetadata({
   const recipe = getRecipeBySlug(slug);
 
   if (!recipe) {
-    return { title: `Recipe Not Found | ${site.name}` };
+    return buildMetadata({
+      title: "Recipe Not Found",
+      description: "This recipe couldn't be found.",
+      path: `/recipes/${slug}`,
+    });
   }
 
-  return {
-    title: `${recipe.title} | ${site.name}`,
+  return buildMetadata({
+    title: recipe.title,
     description: recipe.description,
-  };
+    path: `/recipes/${recipe.slug}`,
+  });
 }
 
 export default async function RecipePage({ params }: RecipePageProps) {
@@ -39,21 +47,55 @@ export default async function RecipePage({ params }: RecipePageProps) {
 
   return (
     <div className="container-page py-14">
-      <Link
-        href="/recipes"
-        className="font-body text-sm font-semibold text-olive-dark hover:text-tomato"
-      >
-        &larr; Back to all recipes
-      </Link>
+      {/* Structured data is only emitted for verified recipes — a fake
+          recipe rendered as a schema.org Recipe would show up in Google's
+          recipe rich results as if it were real. */}
+      {recipe.verified && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Recipe",
+            name: recipe.title,
+            description: recipe.description,
+            recipeCategory: recipe.category,
+            recipeYield: recipe.servings,
+            recipeIngredient: recipe.ingredients,
+            recipeInstructions: recipe.steps.map((step) => ({
+              "@type": "HowToStep",
+              text: step,
+            })),
+            author: { "@type": "Person", name: site.name },
+            url: `${site.url}/recipes/${recipe.slug}`,
+          }}
+        />
+      )}
+      <div className="flex flex-wrap items-center justify-between gap-4 print:hidden">
+        <Link
+          href="/recipes"
+          className="font-body text-sm font-semibold text-olive-dark hover:text-tomato"
+        >
+          &larr; Back to all recipes
+        </Link>
+        <RecipeActions title={recipe.title} />
+      </div>
+
+      {!recipe.verified && (
+        <p className="mt-4 rounded-xl bg-cream-dark px-4 py-3 font-body text-sm text-ink-light print:hidden">
+          This is a sample recipe used to preview the page format — not yet
+          one of Diane&apos;s real recipes.
+        </p>
+      )}
 
       <div className="mt-6 grid gap-10 md:grid-cols-2">
         <div className="relative aspect-[4/3] w-full overflow-hidden rounded-3xl shadow-md">
-          <PlaceholderImage
+          <SiteImage
             src={recipe.image}
             alt={recipe.title}
-            label={recipe.title}
+            fallbackLabel={recipe.title}
             variant="tomato"
             fill
+            priority
+            sizes="(min-width: 768px) 50vw, 100vw"
           />
         </div>
 

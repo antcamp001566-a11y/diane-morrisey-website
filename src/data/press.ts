@@ -14,6 +14,7 @@ export type PressMention = {
   description: string;
   date: string;
   link: string;
+  type: "article" | "podcast";
 };
 
 export const pressMentions: PressMention[] = [
@@ -24,6 +25,7 @@ export const pressMentions: PressMention[] = [
       "A look at how Diane built her following and turned it into her debut, New York Times best-selling cookbook.",
     date: "2025",
     link: "https://www.aarp.org/entertainment/books/diane-morrisey-you-got-this-cookbook/",
+    type: "article",
   },
   {
     outlet: "Moffly Lifestyle Media",
@@ -32,6 +34,7 @@ export const pressMentions: PressMention[] = [
       "A Connecticut lifestyle feature on Diane's cooking philosophy and the story behind You Got This!",
     date: "2025",
     link: "https://mofflylifestylemedia.com/empowering-home-cooks-with-confidence-flavor-and-heart/",
+    type: "article",
   },
   {
     outlet: "AOL / Yahoo Lifestyle",
@@ -40,6 +43,7 @@ export const pressMentions: PressMention[] = [
       "An interview covering Diane's practical, no-fuss approach to weeknight cooking.",
     date: "2025",
     link: "https://www.aol.com/lifestyle/food-influencer-diane-morrisey-shares-130058322.html",
+    type: "article",
   },
   {
     outlet: "Daily Voice (Trumbull-Monroe)",
@@ -48,6 +52,7 @@ export const pressMentions: PressMention[] = [
       "A hometown profile on Diane's rise as a food influencer from Trumbull, Connecticut.",
     date: "",
     link: "https://dailyvoice.com/connecticut/trumbull/lifestyle/move-over-martha-trumbulls-diane-morrisey-is-social-medias-rising-foodie-star/779507/",
+    type: "article",
   },
   {
     outlet: "Connecticut Post",
@@ -56,6 +61,7 @@ export const pressMentions: PressMention[] = [
       "Local coverage of Diane's early Instagram growth and how it started as a way to keep tabs on her six kids.",
     date: "",
     link: "https://www.ctpost.com/news/article/trumbull-food-influencer-diane-morrisey-1m-follow-17862816.php",
+    type: "article",
   },
   {
     outlet: "Cookbook Love Podcast",
@@ -64,6 +70,7 @@ export const pressMentions: PressMention[] = [
       "A podcast conversation about writing her first cookbook and staying true to her voice.",
     date: "2025",
     link: "https://cookbooklove.libsyn.com/episode-343-you-got-this-feeding-people-writing-cookbooks-and-staying-real-with-diane-morrisey",
+    type: "podcast",
   },
 ];
 
