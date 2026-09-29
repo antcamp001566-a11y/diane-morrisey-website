@@ -17,6 +17,7 @@ export default function ContactPage() {
       <div className="grid gap-14 md:grid-cols-[1.2fr_1fr]">
         <div>
           <SectionHeading
+            as="h1"
             eyebrow="Get In Touch"
             title="Let's work together"
             description="Brand or media inquiry? Recipe question? Just want to say hi? I'd love to hear from you."

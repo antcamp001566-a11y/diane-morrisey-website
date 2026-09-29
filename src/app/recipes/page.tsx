@@ -30,6 +30,7 @@ export default function RecipesPage() {
   return (
     <div className="container-page py-14">
       <SectionHeading
+        as="h1"
         eyebrow="The Recipe Box"
         title="Real recipes for real life"
         description="Search or browse by category to find your next family-favorite dinner, dessert, or holiday bake."

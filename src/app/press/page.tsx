@@ -15,6 +15,7 @@ export default function PressPage() {
   return (
     <div className="container-page py-14">
       <SectionHeading
+        as="h1"
         eyebrow="Press & Media"
         title="Featured in"
         description="A few of the places that have covered Diane's recipes, her story, and You Got This!"

@@ -27,7 +27,7 @@ export default function AboutPage() {
           />
         </div>
         <div>
-          <SectionHeading eyebrow="About Diane" title="Hi, I'm Diane." />
+          <SectionHeading as="h1" eyebrow="About Diane" title="Hi, I'm Diane." />
           <div className="mt-5 space-y-4 font-body text-lg text-ink-light">
             <p>{intro}</p>
             <blockquote className="border-l-4 border-tomato py-1 pl-4 font-display text-xl italic text-ink">
