@@ -26,34 +26,33 @@ export default function AboutPage() {
           <SectionHeading eyebrow="About Diane" title="Hi, I'm Diane." />
           <div className="mt-5 space-y-4 font-body text-lg text-ink-light">
             <p>
-              I&apos;m a mom of 6, which means my kitchen has seen every kind
-              of chaos &mdash; picky eaters, spilled milk, a toddler
-              &ldquo;helping,&rdquo; and dinner that needs to happen anyway.
-              That&apos;s exactly why I started sharing recipes in the first
-              place: not because I&apos;m a trained chef, but because I know
-              what it&apos;s like to need dinner on the table in 30 minutes
-              with whatever&apos;s in the fridge.
+              Long before Instagram, I was already feeding a crowd. I ran my
+              own catering business in Fairfield County for years, then
+              spent over a decade at Whole Foods, eventually overseeing the
+              prepared foods business for stores across New York and
+              Connecticut. Real food, made for real people &mdash; that was
+              always the job.
             </p>
             <p>
-              What started as a way to keep track of my own family&apos;s
-              favorite recipes turned into a community of over {site.instagramFollowers}{" "}
-              home cooks who&apos;ve told me the same thing over and over:
-              these recipes actually work for real life. No 15-ingredient
-              lists, no equipment you don&apos;t own, no pretending your
-              kids love kale.
+              Then I got Instagram, mostly to keep an eye on my six kids. One
+              day, just for fun, I posted a photo of a cake I&apos;d made. I
+              didn&apos;t expect much &mdash; but the questions started
+              rolling in: What&apos;s the recipe? Can I really pull this off?
+              I started answering the way my dad, a basketball coach, always
+              answered me: &ldquo;You got this.&rdquo; Turns out that&apos;s
+              exactly what people needed to hear.
             </p>
             <p>
-              That philosophy became the heart of my first cookbook,{" "}
-              <em>You Got This!</em> &mdash; recipes for the nights you&apos;re
-              exhausted, the holidays you&apos;re hosting, and everything in
-              between. I still test every recipe in my own kitchen, with my
-              own six taste-testers keeping me honest.
+              That&apos;s the whole philosophy behind my cooking, and behind
+              my first cookbook, <em>You Got This!</em>: cooking is 90
+              percent confidence and 10 percent being able to read a recipe.
+              No fancy techniques, no 12-ingredient grocery lists &mdash; just
+              real food, simple enough that you actually make it again.
             </p>
             <p>
-              When I&apos;m not cooking, you&apos;ll find me chasing my kids
-              around, planning our next family trip (Italy and Greece are
-              on repeat), or convincing everyone that yes, we are having
-              pasta again.
+              These days I&apos;m still testing every recipe in my own
+              kitchen in Trumbull, Connecticut, with my six kids (mostly
+              grown now) as the toughest critics I&apos;ve got.
             </p>
           </div>
           <div className="mt-8">

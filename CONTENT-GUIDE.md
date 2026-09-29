@@ -70,6 +70,42 @@ Before launch, connect these to:
 - A form backend (Formspree, Netlify Forms, or a simple serverless
   function) for the contact form, so business inquiries land in an inbox.
 
+## What's real vs. still placeholder
+
+Some content was updated from public research (news coverage, retailer
+listings, interviews) to be factually accurate. Everything else is still
+placeholder and needs Diane's input.
+
+**Confirmed real (via public sources):**
+- Book: full title *You Got This!: Recipes Anyone Can Make and Everyone
+  Will Love*, published by S&S/Simon Element, March 25, 2025, 272 pages,
+  ISBN 9781668033401, New York Times bestseller.
+- Bio facts on the About page: ran a catering business in Fairfield
+  County, worked at Whole Foods overseeing prepared foods for NY/CT
+  stores, started Instagram to keep track of her six kids, her dad was a
+  basketball coach (the source of "You got this"), and her stated
+  philosophy: "Cooking is 90 percent confidence and 10 percent being able
+  to read a recipe."
+- Press mentions on `/press`: AARP, Moffly Lifestyle Media, AOL/Yahoo
+  Lifestyle, Daily Voice, Connecticut Post, and the Cookbook Love podcast
+  all really covered her — links go to the real articles. The
+  `description` under each headline is a factual summary, not a verbatim
+  quote (none of the full articles were read, only their public
+  summaries) — read the piece and swap in a real pull-quote if you want one.
+- Real handles: Instagram `@dianemorrisey`, TikTok `@dianemorrisey`,
+  Facebook `dianemorriseycooking`.
+
+**Still needs confirmation before launch:**
+- Exact current Instagram follower count (sources found ranged 1.5M–2M+).
+- Whether she has a Pinterest account (none was found).
+- Her actual YouTube channel URL (a channel exists but no vanity handle
+  was confirmed — `src/data/site.ts` has a placeholder).
+- Real contact emails (`hello@` / `partnerships@dianemorrisey.com` are
+  both made up).
+- The two "reader review" testimonials on `/the-book` are still
+  placeholder text, clearly labeled as such in `src/data/book.ts`.
+- All recipes and all photos are still placeholders.
+
 ## Domain
 
 The site currently has no domain configured. Before launching, check

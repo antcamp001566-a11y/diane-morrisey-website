@@ -35,14 +35,16 @@ export default function PressPage() {
               <span className="font-display text-lg font-semibold text-ink">
                 {mention.outlet}
               </span>
-              <span className="font-body text-xs font-semibold text-ink-light">
-                {mention.date}
-              </span>
+              {mention.date && (
+                <span className="font-body text-xs font-semibold text-ink-light">
+                  {mention.date}
+                </span>
+              )}
             </div>
             <h3 className="font-body text-lg font-bold text-tomato-dark">
               {mention.headline}
             </h3>
-            <p className="font-body text-ink-light">&ldquo;{mention.quote}&rdquo;</p>
+            <p className="font-body text-ink-light">{mention.description}</p>
             <span className="mt-2 font-body text-sm font-semibold text-olive-dark">
               Read the feature &rarr;
             </span>
