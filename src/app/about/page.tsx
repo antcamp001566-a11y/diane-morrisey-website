@@ -26,12 +26,12 @@ export default function AboutPage() {
           <SectionHeading eyebrow="About Diane" title="Hi, I'm Diane." />
           <div className="mt-5 space-y-4 font-body text-lg text-ink-light">
             <p>
-              Long before Instagram, I was already feeding a crowd. I ran my
-              own catering business in Fairfield County for years, then
-              spent over a decade at Whole Foods, eventually overseeing the
-              prepared foods business for stores across New York and
-              Connecticut. Real food, made for real people &mdash; that was
-              always the job.
+              Long before Instagram, I was already feeding a crowd. A Monroe,
+              Connecticut native, I ran my own catering business in Fairfield
+              County for years, then spent over a decade at Whole Foods,
+              eventually overseeing the prepared foods business for stores
+              across New York and Connecticut. Real food, made for real
+              people &mdash; that was always the job.
             </p>
             <p>
               Then I got Instagram, mostly to keep an eye on my six kids. One
@@ -51,8 +51,8 @@ export default function AboutPage() {
             </p>
             <p>
               These days I&apos;m still testing every recipe in my own
-              kitchen in Trumbull, Connecticut, with my six kids (mostly
-              grown now) as the toughest critics I&apos;ve got.
+              kitchen in Trumbull, Connecticut, with my husband and six kids
+              (mostly grown now) as the toughest critics I&apos;ve got.
             </p>
           </div>
           <div className="mt-8">
