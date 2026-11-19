@@ -17,6 +17,7 @@
 | Offering | What it is | Intent | Value investment | Effort |
 |---|---|---|---|---|
 | **Recipe library** | Every recipe as a proper card: ingredients, steps, time, servings, Reel embedded, print button, *Jump to Recipe* | 5 | **Moving years of Instagram recipes over. This is the product.** | **High, one-time**, then low |
+| **Ask Diane helper** | AI kitchen helper on each recipe: substitutions (butter → oil, stand mixer → hand mixer + speed), scaling, troubleshooting. Labeled as AI, never claims to be Diane. See [08](08-ask-diane-assistant.md). | 5 | Diane approving a swap library | Medium (launches in Next) |
 | **Search & filters** | By ingredient, time (≤30 min), meal, diet, occasion | 5 | Tagging each recipe | Medium |
 | **Home page** | "New this week," "30-minute dinners," "Start here if you're new" | 5 | Choosing the best entry recipes | Low |
 | **About Diane** | Mom of six, the Food Network origin story, Whole Foods career, the book | 5 | Telling her story in her voice | Low, one-time |
@@ -61,6 +62,7 @@
 - **Exit metric:** steady Instagram→site traffic; returning visitors growing
 
 ### Next (3–9 months): build the relationship
+- [ ] Launch **Ask Diane** on the top 50 recipes (doc 08)
 - [ ] Free What's for Dinner newsletter
 - [ ] Migrate the remaining back catalog (VA or intern)
 - [ ] Search filters; holiday menu collections

@@ -14,6 +14,8 @@
 
 **Governing principle:** every recommendation is checked for **intent**, meaning what it's *for*. See [00-intent-standard.md](00-intent-standard.md). The big fork is ad-heavy versus clean recipe pages (doc 05).
 
+**Signature feature:** **Ask Diane**, an AI kitchen helper on every recipe that answers "what can I use instead?" in Diane's style, so cooks finish the meal instead of leaving. Honestly labeled as AI (doc 08).
+
 **Primary metric:** returning visitors per month, plus recipes saved and made.
 
 **Current repo state:** no code yet. The tech recommendation is in doc 05 (WordPress + WP Recipe Maker, or a static site with Recipe schema).
@@ -29,6 +31,7 @@
 | 04 | [Market & Competitors](04-market-and-competitors.md) | Recipe-site landscape, benchmarking template, differentiation |
 | 05 | [Product & Pricing](05-product-and-pricing.md) | Site features, business developments ranked by intent, pricing, roadmap |
 | 06 | [Core SOPs](06-core-sops.md) | Instagram→site acquisition, onboarding, content, support, intent review |
+| 08 | [Ask Diane Assistant](08-ask-diane-assistant.md) | AI kitchen helper for substitutions, with trust rules, build, rollout and metrics |
 | 07 | [Content & Offer Model](07-content-and-offer-model.md) | Free vs. book vs. services; cannibalization rules; why the cookbook is a relationship builder; services catalog |
 
 ## Tags
