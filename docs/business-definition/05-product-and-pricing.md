@@ -26,10 +26,14 @@
 
 ### Business development (Next / Later), ranked by intent
 
+> **Revenue comes from services, not the cookbook.** The cookbook is a relationship builder (low royalty per copy; high trust value). The full content-vs-book-vs-services model, cannibalization rules and services catalog are in **[07-content-and-offer-model.md](07-content-and-offer-model.md)**.
+
 | Development | Re-rooted question | Intent | Model `[Suggested]` | Evidence trigger |
 |---|---|---|---|---|
-| **Cookbook #2** | "What did followers ask for that book #1 didn't cover?" | 4–5 | Publisher advance + royalties `[Ask Diane]` | Site search and email replies reveal clear gaps |
+| **Recipe development & brand consulting** | "Which food brands need what Diane uniquely knows: home cooks *and* grocery prepared foods?" | 4 | Project fees $2.5K–15K; retainers `[Ask Diane]` | Inbound brand inquiries (likely already happening) |
 | **Cooking classes & demos** (virtual and Connecticut in-person) | "Who wants to cook *with* Diane, not just watch?" | 5 | Virtual $25–45/seat; in-person $75–150; book-signing demos at venues `[Suggested]` | Followers asking "do you teach?" |
+| **Corporate & private cooking events** | "Which Fairfield County companies want a team experience people actually enjoy?" | 4 | $3–10K per event `[Suggested]` | First pilot event sells |
+| **Cookbook #2** (relationship builder) | "What did followers ask for that book #1 didn't cover?" | 4–5 | Advance + royalties `[Ask Diane]`; **built with QR doorways to the site, classes and the newsletter** | Site search and email replies reveal clear gaps |
 | **Holiday & seasonal menus** | "When are cooks most stressed?" (Thanksgiving, Christmas Eve) | 5 | Free menus; optional paid printable guide $5–15 `[Suggested]` | Holiday traffic spikes |
 | **Meal-plan membership** (optional) | "Who wants the week planned for them?" | 4 | ~$5–8/mo or $50–70/yr: weekly plan, shopping list, scaling `[Suggested]`. **Recipes stay free.** | 10%+ of newsletter readers say they'd pay |
 | **Brand partnerships** | "What does Diane actually use?" | 3–4 | Per-campaign fee `[Ask Diane]`; always disclosed; product fit judged with her Whole Foods eye | Already likely happening `[Ask Diane]` |

@@ -10,7 +10,7 @@
 
 **What this site is:** **the home for every Diane recipe.** A searchable recipe library, built to get cooks to the food fast, plus a free weekly "What's for Dinner" email, a cookbook hub and a Work with Diane page.
 
-**Business model:** *value-first.* Free recipes build the returning audience. Revenue comes from books, classes, honest partnerships and, optionally, meal plans, with ads only later and under strict rules.
+**Business model:** *value-first, three buckets* (doc 07). **Free** content earns trust. **The cookbook builds the relationship.** It isn't the money engine: royalties are small, and free videos of book recipes cannibalize it. **Services generate revenue:** recipe development and brand consulting, classes, events, membership and honest partnerships. Ads come only later, under strict rules.
 
 **Governing principle:** every recommendation is checked for **intent**, meaning what it's *for*. See [00-intent-standard.md](00-intent-standard.md). The big fork is ad-heavy versus clean recipe pages (doc 05).
 
@@ -29,6 +29,7 @@
 | 04 | [Market & Competitors](04-market-and-competitors.md) | Recipe-site landscape, benchmarking template, differentiation |
 | 05 | [Product & Pricing](05-product-and-pricing.md) | Site features, business developments ranked by intent, pricing, roadmap |
 | 06 | [Core SOPs](06-core-sops.md) | Instagram→site acquisition, onboarding, content, support, intent review |
+| 07 | [Content & Offer Model](07-content-and-offer-model.md) | Free vs. book vs. services; cannibalization rules; why the cookbook is a relationship builder; services catalog |
 
 ## Tags
 
