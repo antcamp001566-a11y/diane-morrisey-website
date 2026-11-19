@@ -31,6 +31,7 @@
 | 04 | [Market & Competitors](04-market-and-competitors.md) | Recipe-site landscape, benchmarking template, differentiation |
 | 05 | [Product & Pricing](05-product-and-pricing.md) | Site features, business developments ranked by intent, pricing, roadmap |
 | 06 | [Core SOPs](06-core-sops.md) | Instagram→site acquisition, onboarding, content, support, intent review |
+| 09 | [AI Agents](09-ai-agents.md) | The agent team (migration, inbox, Ask Diane, newsletter, classes), how they connect, costs, guardrails. Prompts in [`/agents`](../../agents/) |
 | 08 | [Ask Diane Assistant](08-ask-diane-assistant.md) | AI kitchen helper for substitutions, with trust rules, build, rollout and metrics |
 | 07 | [Content & Offer Model](07-content-and-offer-model.md) | Free vs. book vs. services; cannibalization rules; why the cookbook is a relationship builder; services catalog |
 

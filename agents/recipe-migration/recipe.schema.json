@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Diane Morrisey Recipe Card",
+  "type": "object",
+  "required": ["id", "title", "source", "ingredients", "steps", "tags", "review_flags", "status"],
+  "properties": {
+    "id": { "type": "string", "description": "URL slug, e.g. chicken-tortellini-zuppa-toscana" },
+    "title": { "type": "string" },
+    "intro": { "type": ["string", "null"], "description": "Diane's story or note, shown below the recipe card" },
+    "source": {
+      "type": "object",
+      "required": ["platform", "url", "posted"],
+      "properties": {
+        "platform": { "enum": ["instagram", "facebook", "site", "cookbook"] },
+        "url": { "type": "string" },
+        "posted": { "type": "string", "format": "date" },
+        "reel_embed": { "type": ["string", "null"] }
+      }
+    },
+    "servings": { "type": ["integer", "null"] },
+    "prep_minutes": { "type": ["integer", "null"] },
+    "cook_minutes": { "type": ["integer", "null"] },
+    "ingredients": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item"],
+        "properties": {
+          "qty": { "type": ["number", "string", "null"] },
+          "unit": { "type": ["string", "null"] },
+          "item": { "type": "string" },
+          "prep": { "type": ["string", "null"] },
+          "group": { "type": ["string", "null"], "description": "e.g. 'For the sauce'" }
+        }
+      }
+    },
+    "steps": { "type": "array", "items": { "type": "string" } },
+    "tags": {
+      "type": "object",
+      "properties": {
+        "meal": { "type": "array", "items": { "type": "string" } },
+        "protein": { "type": ["string", "null"] },
+        "time_bucket": { "enum": ["under-30", "30-60", "over-60", null] },
+        "diet": { "type": "array", "items": { "type": "string" } },
+        "occasion": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "swaps_mentioned": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["item", "swap"],
+        "properties": {
+          "item": { "type": "string" },
+          "swap": { "type": "string" },
+          "amount_or_setting": { "type": ["string", "null"] },
+          "notes": { "type": ["string", "null"] }
+        }
+      }
+    },
+    "cookbook_only": { "type": "boolean", "default": false },
+    "review_flags": { "type": "array", "items": { "type": "string" } },
+    "status": { "enum": ["draft", "approved", "published"], "default": "draft" }
+  }
+}
