@@ -1,16 +1,14 @@
 # 01 — Lean Canvas
 
-> **AI-assisted document.** See [00-intent-standard.md](00-intent-standard.md) for the tags and intent levels.
+> **AI-assisted document.** Public facts come from the sources in [README.md](README.md#sources). See [00-intent-standard.md](00-intent-standard.md) for tags.
 
-## What the repo actually tells us
+## Who Diane is (public record) `[Verify]`
 
-The repository has one file, `README.md`:
-
-> "A website dedicated to Diane Morrisey, including her background, work, and accomplishments. Personal website for Diane Morrisey, built with Claude Code."
-
-The MK-320 Phase 2 brief adds that Diane has an **audience** (interviewed in Phase 1), and the site needs content that will **"both attract her audience and keep them coming back."**
-
-That's all that's known. Every other cell below is `[Suggested]`, `[Phase 1]` or `[Ask Diane]`.
+- **Home cook and food creator** from Trumbull, Connecticut. Mother of six ("6 in nine years"). She taught herself to cook as a young mother in the early '90s by watching Food Network.
+- **Former Whole Foods executive.** Oversaw prepared foods and store operations for New York and Connecticut stores.
+- **Instagram @dianemorrisey.** Started around 2017 (a birthday cake for her daughter). 1M followers by May 2023 (WFSB), 1.4M by 2025 (AARP), about 2M on her current profile. Facebook "Diane Morrisey Cooking" has about 54K followers; TikTok is small (about 4.5K).
+- **Cookbook:** *You Got This!: Recipes Anyone Can Make and Everyone Will Love*. Simon & Schuster, March 25, 2025, 100 recipes, 272 pages. Her Instagram bio calls her a NYT bestselling author `[Verify against the NYT list]`.
+- **Recipes live in Instagram captions and Reels.** There's **no dedicated recipe website.** Her link in bio points to the cookbook.
 
 ---
 
@@ -18,20 +16,12 @@ That's all that's known. Every other cell below is `[Suggested]`, `[Phase 1]` or
 
 | | |
 |---|---|
-| **1. Problem** | `[Phase 1]` What does her audience currently lack? Top 3, each with a citation. `[Suggested]` hypotheses for a personal site: **(a)** her work and story are scattered across platforms or not online at all; **(b)** people who want more from her have no reliable place to go back to; **(c)** people who want to work with her (hire, invite, collaborate) don't know how. |
-| **2. Customer segments** | `[Suggested]` **Returning followers** (already know her, want more). **Newcomers** (just heard of her, deciding if she's worth their attention). **Professional contacts** (want to book, partner or refer). `[Phase 1]` Confirm which of these the interviewees actually were. **Early adopters:** the people interviewed in Phase 1. |
-| **3. Unique value proposition** | `[Suggested]` *"The one place to get Diane's [work/insight/story], made for the people who come back."* Fill the bracket from Phase 1. The UVP should name **what the audience gets**, not what Diane promotes. `Intent: 5` |
-| **4. Solution** | `[Suggested]` **(a)** A clear "who Diane is and why it matters" home page. **(b)** A regularly updated content core people return for: the main return driver (see doc 05). **(c)** A simple, honest way to stay connected (newsletter or follow). **(d)** A clear path for professional inquiries. |
-| **5. Channels** | `[Suggested]` Diane's existing relationships and social presence `[Ask Diane]`, word of mouth from returning followers, search (people looking her up by name), email, cross-links from any organizations she's part of. |
-| **6. Revenue streams** | `[Suggested]` **None needed at launch.** The site's first job is relationship and reputation. Later options, in order of intent alignment: inquiries leading to paid work (`Intent: 4`); paid deeper offerings people already ask for (`Intent: 4`); disclosed recommendations (`Intent: 3`). See doc 05. |
-| **7. Cost structure** | `[Suggested]` No tech stack exists yet. A typical lean personal site: domain ~$12–20/yr; static hosting $0 (Netlify, Vercel or GitHub Pages free tiers); newsletter $0 at launch (free tiers up to ~1,000 subscribers); optional site builder $15–25/mo if Diane wants to edit without code. **Largest real cost: Diane's time creating content.** That's the value investment and shouldn't be the first thing cut. |
-| **8. Key metrics** | `[Suggested]` **Primary: returning visitors per month** (the brief's "keep them coming back"). Then: newsletter subscribers and open rate, replies or messages from readers, inquiries received. **Deliberately not primary:** raw page views or revenue. They reward capture over value. |
-| **9. Unfair advantage** | **Diane herself.** Her story, voice and relationships can't be copied by anyone else. `[Phase 1]` What do interviewees say they get from Diane that they can't get elsewhere? That answer *is* the unfair advantage. |
-
----
-
-## Intent check on this canvas
-
-- Problem and segments start from the audience, not from revenue. **Level 4–5.**
-- Revenue is deferred until the site has earned attention. **Level 4.**
-- Risk to watch: if "Revenue streams" becomes the first thing Diane asks about, it's worth going back to doc 00 together.
+| **1. Problem** | **(a) Recipes are trapped in Instagram.** You can't search them, filter them, print them or find them a week later, and the algorithm decides who sees each one. **(b) No home base Diane owns.** 2M followers live on a platform she rents. **(c) "What's for dinner?" fatigue.** Her book's stated purpose is getting cooks out of that rut. `[Phase 1]` Confirm which pain her audience feels most, with citations. |
+| **2. Customer segments** | **Everyday family cooks** who want reliable weeknight dinners. **Confidence-seekers** who think they "can't cook" (the "You Got This!" promise). **Cookbook readers** who want more after the book. **Professional contacts:** publishers, brands, media, event hosts. `[Phase 1]` Confirm and rank. Note: AARP's coverage hints at an audience that includes 50+ cooks `[Phase 1]`. |
+| **3. Unique value proposition** | **"Every Diane recipe, finally in one place. Easy to find, easy to cook, and they always work."** `Intent: 5` |
+| **4. Solution** | **(a)** A searchable recipe library: by ingredient, time, meal type and diet. **(b)** Clean recipe pages with *Jump to Recipe*, a printable card and the Reel embedded. **(c)** A free weekly "What's for Dinner" email. **(d)** A cookbook hub, and a home for future books. **(e)** A Work with Diane page for brands, media and events. |
+| **5. Channels** | **Instagram is the main channel** (2M followers). Every Reel can say "full recipe at [site]." Plus Facebook, Google search (recipe rich results), the newsletter, cookbook readers, local Connecticut press and bookstores (e.g., RJ Julia hosted her). |
+| **6. Revenue streams** | Ranked by intent, see doc 05: **(1)** cookbook sales and future books; **(2)** disclosed brand partnerships she actually believes in; **(3)** cooking classes and events, online and in Connecticut; **(4)** an optional paid meal-plan tier; **(5)** ads, *later and only under strict rules*. |
+| **7. Cost structure** | `[Suggested]` WordPress + a recipe plugin (WP Recipe Maker) on managed hosting: about $30–60/mo. Domain ~$20/yr. Email platform about $0–100/mo depending on list size. Photography: she already produces it for Instagram. **Biggest cost: moving several years of Instagram recipes into proper recipe cards.** That's the core value investment; budget for help (a VA or student intern). |
+| **8. Key metrics** | **Primary: returning visitors per month.** Then Instagram→site click-through, recipe saves, prints and "I made it" comments, newsletter subscribers and open rate. **Not primary:** raw page views and ad RPM. They reward padding pages. |
+| **9. Unfair advantage** | **Trust that would take anyone else years to build:** a real mom of six, a former Whole Foods prepared-foods executive, 2M followers, and a major-publisher cookbook. Her recipes are tested on a real family. |

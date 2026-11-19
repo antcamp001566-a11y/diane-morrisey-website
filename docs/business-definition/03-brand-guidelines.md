@@ -1,59 +1,62 @@
 # 03 — Brand Guidelines
 
-> **AI-assisted document.** There's no existing UI, copy or styling in the repo, so nothing here is inferred from code. Personas are `[Suggested]` archetypes for a personal website. **Replace them with personas built from Phase 1 interviewees.**
+> **AI-assisted document.** Voice is drawn from Diane's public brand (*You Got This!*, "recipes anyone can make and everyone will love"). Personas are `[Suggested]`. **Replace or confirm them using Phase 1 interviewees.**
 
-## Personas `[Suggested]` → replace with `[Phase 1]`
+## Personas `[Suggested]` → confirm with `[Phase 1]`
 
-### 1. The Returning Follower
-- **Who:** Already knows Diane, in person or online.
-- **Wants:** More of what they already value from her, without having to hunt for it.
-- **Comes back when:** There's something new and it's worth their time.
-- **Leaves when:** The site feels like a sales page or goes stale.
-- **Phase 1 evidence:** `[P__ @ mm:ss]`
+### 1. The Weeknight Parent
+- **Life:** Feeds a family most nights; short on time; tired of the same 5 dinners.
+- **Needs:** Fast, reliable dinners kids will eat; a shopping list; something new that isn't risky.
+- **Today:** Saves Diane's Reels, then can't find them again.
+- **Comes back for:** A weekly dinner idea.
+- **Evidence:** `[P__ @ mm:ss]`
 
-### 2. The Newcomer
-- **Who:** Just heard Diane's name from a friend, a search or a mention.
-- **Wants:** To understand in about 30 seconds who she is and why it matters to *them*.
-- **Converts to Returning Follower when:** They find one thing genuinely useful or moving.
-- **Phase 1 evidence:** `[P__ @ mm:ss]`
+### 2. The Confidence-Seeker
+- **Life:** Thinks they "can't cook," or is cooking for themselves for the first time (a new grad, newly single, newly empty-nester).
+- **Needs:** Plain steps, no jargon, encouragement. The literal "You Got This!" audience.
+- **Comes back for:** Wins. Each recipe that works earns the next visit.
+- **Evidence:** `[P__ @ mm:ss]`
 
-### 3. The Professional Contact
-- **Who:** Someone who wants to hire, invite, partner with or refer Diane.
-- **Wants:** Credibility (background, accomplishments) and a clear way to reach her.
-- **Phase 1 evidence:** `[P__ @ mm:ss]` or `[Ask Diane]` if none were interviewed.
+### 3. The Entertainer / Holiday Host
+- **Life:** Cooks for crowds: holidays, Sunday dinners, big families.
+- **Needs:** Scalable recipes, make-ahead tips, menus.
+- **Comes back for:** Seasonal menus (Thanksgiving, Christmas Eve, summer).
+- **Evidence:** `[P__ @ mm:ss]`
 
-## Voice & tone `[Suggested]`
+### 4. The Professional Contact
+- **Who:** Brands, publishers, media producers, event hosts, bookstores.
+- **Needs:** Audience stats, past work, a clear contact path, a media kit.
 
-| We are | We are not |
+## Voice & tone
+
+| Diane's voice is | It is not |
 |---|---|
-| Warm, personal, first-person where it's Diane speaking | Corporate, third-person marketing |
-| Plain English | Jargon or buzzwords |
-| Specific: real stories, real examples | Vague claims ("passionate about excellence") |
-| Inviting ("If this helped, here's more") | Pushy ("Don't miss out!", countdown timers) |
+| Warm, encouraging, like a friend in your kitchen | Chef-y, intimidating or fussy |
+| Plain English ("cook until golden") | Technique jargon without explanation |
+| Real ("my kids devour this") | Polished-magazine perfect |
+| Generous ("swap the chicken for chickpeas") | Rigid |
+| Reassuring ("You got this!") | Pushy ("Don't miss out!", countdown timers) |
 
-**Tone shifts by section:** the home page is welcoming and clear; content is Diane's natural voice; the about page is story-driven, with accomplishments as evidence, not a résumé dump; the contact page is direct and practical.
+**Signature phrases to keep using:** *"You got this."* *"Anyone can make."* *"Everyone will love."*
 
-## Messaging pillars `[Suggested]`
+## Messaging pillars
 
-Each pillar has to trace back to something the audience said (`[Phase 1]`).
-
-1. **Who Diane is.** Her background, told as a story with a point.
-2. **What she offers people.** The core value the audience gets (the content focus from doc 05).
-3. **Why come back.** What's new, and the rhythm it arrives on.
-4. **How to connect.** Stay in touch, or work together.
+1. **Anyone can make it.** Simple steps, everyday ingredients.
+2. **Everyone will love it.** Tested on a real family of eight.
+3. **Find it, save it, make it again.** The website's job.
+4. **From Diane's kitchen to yours.** Mom of six, former Whole Foods executive, cookbook author.
 
 ## Positioning statement `[Suggested]`
 
-> **For** [primary audience from Phase 1]
-> **who** [their need, in their own words — cite],
-> **Diane Morrisey's website is** the home for [core content/value]
-> **that** [key benefit].
-> **Unlike** [scattered social posts / generic sources / nothing at all],
-> **it** comes directly from Diane and is built for people who return.
+> **For** home cooks who want reliable, family-pleasing meals without stress,
+> **Diane Morrisey's website is** the home for every recipe from her kitchen,
+> **that** makes them easy to find, cook and come back to.
+> **Unlike** ad-heavy recipe sites or recipes lost in social feeds,
+> **it** gets you to the food fast, from a cook you already trust.
 
 ## Visual direction `[Suggested]` `[Ask Diane]`
 
-- Lead with a real photo of Diane, not stock imagery.
-- One accent color and one readable serif or sans-serif pair. Restraint reads as trustworthy.
-- Mobile-first. Most first visits will come from a phone link.
-- Accessible contrast (WCAG AA) and readable type (16px+ body).
+- Match the look of her Instagram and cookbook so followers instantly recognize it. Pull colors and type from the *You Got This!* cover.
+- Real food photos from her kitchen, never stock.
+- Mobile-first. Followers arrive from Instagram on phones.
+- Recipe cards: large type, high contrast, a "cook mode" that keeps the screen awake, and print-friendly.

@@ -1,43 +1,58 @@
 # Business Definition: Diane Morrisey Website
 
-> **AI-assisted.** These documents were drafted with Claude (AI) to support the MK-320 Consumer Research Project (Phase 2). Under the course rules, the team develops its recommendations itself first and labels anything that came from AI. Treat everything tagged `[Suggested]` as a starting point to check against the team's own Phase 1 findings, not as the team's recommendations.
+> **AI-assisted.** Drafted with Claude (AI) to support the MK-320 Consumer Research Project (Phase 2). Under the course rules, the team develops its recommendations itself first and labels anything that came from AI. Everything tagged `[Suggested]` is a starting point to check against the team's Phase 1 findings.
 
 ## Executive summary
 
-**What this is:** a personal website for Diane Morrisey, covering her background, work and accomplishments (from the repo `README.md`). Its job, per the MK-320 brief, is to **attract her audience and keep them coming back.**
+**Who:** Diane Morrisey is a home cook and food creator from Trumbull, CT: mother of six, former Whole Foods prepared-foods executive, about 2M Instagram followers (@dianemorrisey), and author of *You Got This!: Recipes Anyone Can Make and Everyone Will Love* (Simon & Schuster, 2025). `[Verify]` current counts.
 
-**Current state:** the repo has no code yet. No tech stack, UI copy, data model or issues exist, so nothing in these documents was inferred from code. They're built from the README, the course brief and standard practice for personal sites.
+**The problem:** her recipes live only in Instagram captions and Reels. Followers can't search, filter, print or reliably find them again, and Diane doesn't own the channel.
 
-**Business model in one line:** *value-first.* The free content core earns a returning audience; revenue (speaking, paid deeper offerings, partnerships) comes later, and only where the audience has shown it wants it.
+**What this site is:** **the home for every Diane recipe.** A searchable recipe library, built to get cooks to the food fast, plus a free weekly "What's for Dinner" email, a cookbook hub and a Work with Diane page.
 
-**The governing principle:** every recommendation is checked for **intent**, meaning what it's *for*, not just whether it makes money. See [00-intent-standard.md](00-intent-standard.md).
+**Business model:** *value-first.* Free recipes build the returning audience. Revenue comes from books, classes, honest partnerships and, optionally, meal plans, with ads only later and under strict rules.
 
-**Primary metric:** returning visitors per month.
+**Governing principle:** every recommendation is checked for **intent**, meaning what it's *for*. See [00-intent-standard.md](00-intent-standard.md). The big fork is ad-heavy versus clean recipe pages (doc 05).
+
+**Primary metric:** returning visitors per month, plus recipes saved and made.
+
+**Current repo state:** no code yet. The tech recommendation is in doc 05 (WordPress + WP Recipe Maker, or a static site with Recipe schema).
 
 ## Documents
 
 | # | Document | What it answers |
 |---|---|---|
-| 00 | [Intent Standard](00-intent-standard.md) | How to judge whether a recommendation serves the audience or just the revenue line. Read first. |
-| 01 | [Lean Canvas](01-lean-canvas.md) | Problem, audience, value proposition, costs, revenue, metrics on one page |
-| 02 | [Mission, Vision, Values](02-mission-vision-values.md) | Why the site exists, values with decision tests, 10s / 30s / 1-paragraph pitches |
-| 03 | [Brand Guidelines](03-brand-guidelines.md) | Personas, voice and tone, messaging pillars, positioning statement |
-| 04 | [Market & Competitors](04-market-and-competitors.md) | Alternatives competing for the audience's attention; benchmarking template |
-| 05 | [Product & Pricing](05-product-and-pricing.md) | Offering catalog, business developments, pricing philosophy, Now / Next / Later roadmap |
-| 06 | [Core SOPs](06-core-sops.md) | Acquisition, onboarding, content delivery, support, monthly intent review |
+| 00 | [Intent Standard](00-intent-standard.md) | How to judge whether an idea serves cooks or just revenue. Read first. |
+| 01 | [Lean Canvas](01-lean-canvas.md) | Who Diane is, the problem, segments, UVP, costs, revenue, metrics |
+| 02 | [Mission, Vision, Values](02-mission-vision-values.md) | Mission built on "You Got This!", values with decision tests, pitches |
+| 03 | [Brand Guidelines](03-brand-guidelines.md) | Personas, voice, messaging pillars, positioning |
+| 04 | [Market & Competitors](04-market-and-competitors.md) | Recipe-site landscape, benchmarking template, differentiation |
+| 05 | [Product & Pricing](05-product-and-pricing.md) | Site features, business developments ranked by intent, pricing, roadmap |
+| 06 | [Core SOPs](06-core-sops.md) | Instagram→site acquisition, onboarding, content, support, intent review |
 
 ## Tags
 
-- `[Suggested]`: an industry-standard recommendation; review and adjust.
-- `[Phase 1]`: needs a real interview citation (participant code + time stamp). **Never fill with invented quotes.** They're spot-checked against recordings.
-- `[Ask Diane]`: only Diane can confirm.
-- `[Team research]`: needs named comparable sites or cited outside sources.
-- `Intent: N`: level 1 (revenue-first) to 5 (value-first).
+`[Suggested]` recommendation to review · `[Phase 1]` needs a real interview citation, **never invented** · `[Ask Diane]` only she can confirm · `[Team research]` the team must verify and cite · `[Verify]` public reporting, confirm before presenting · `Intent: N` level 1 (revenue-first) to 5 (value-first)
 
 ## For developers and AI agents entering this repo
 
-- Build **mobile-first**, accessible (WCAG AA) and fast. Most first visits come from a phone link.
-- No dark patterns: no pop-ups on arrival, no content gates, no undisclosed affiliate links, no pre-checked consent boxes.
-- Treat the **content core** as the product. Make it easy for Diane to publish.
-- Measure returning visitors, not just page views. Use privacy-respecting analytics.
-- Check new features against [00-intent-standard.md](00-intent-standard.md) before building them.
+- Every recipe uses **schema.org/Recipe** structured data, has a *Jump to Recipe* link, a print view and a screen-awake cook mode.
+- **Mobile-first and fast.** Most visitors arrive from Instagram on phones.
+- **No dark patterns:** no pop-ups before the recipe, no gated recipes, no ads between the cook and the recipe card, no undisclosed affiliate links.
+- Instagram Reels embed on their matching recipe pages.
+- Check new features against [00-intent-standard.md](00-intent-standard.md).
+
+## Sources
+
+Public facts in these docs come from:
+- [AARP: How Food Influencer Diane Morrisey Created a Massive Instagram Platform](https://www.aarp.org/entertainment/books/diane-morrisey-you-got-this-cookbook/)
+- [WFSB: Trumbull mom's recipe Instagram page boasts 1 million followers (May 2023)](https://www.wfsb.com/2023/05/05/trumbull-moms-recipe-instagram-page-boasts-1-million-followers/)
+- [CT Post: Trumbull food influencer builds toward 1 million followers](https://www.ctpost.com/news/article/trumbull-food-influencer-diane-morrisey-1m-follow-17862816.php)
+- [CT Post / NewsTimes: Food influencer Diane Morrisey to release cookbook](https://www.newstimes.com/food/article/diane-morrisey-food-influencer-cookbook-ct-20206078.php)
+- [Daily Voice: Move Over Martha: Trumbull's Diane Morrisey](https://dailyvoice.com/connecticut/trumbull/lifestyle/move-over-martha-trumbulls-diane-morrisey-is-social-medias-rising-foodie-star/779507/)
+- [Simon & Schuster: You Got This!](https://www.simonandschuster.com/books/You-Got-This!/Diane-Morrisey/9781668033401) and [author page](https://www.simonandschuster.com/authors/Diane-Morrisey/206493564)
+- [Cool Mom Eats: recipes from Diane Morrisey](https://coolmomeats.com/2022/03/11/diane-morrisey-food-bloggers-you-should-be-following/)
+- [RJ Julia Booksellers: Diane Morrisey](https://rjjulia.com/diane-morrisey)
+- [Instagram @dianemorrisey](https://www.instagram.com/dianemorrisey/) · [Facebook: Diane Morrisey Cooking](https://facebook.com/dianemorriseycooking/posts)
+
+These were gathered through web search summaries, since direct page access was blocked from this environment. **Open and verify each one before citing it in the deck.**
